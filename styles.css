@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff94b3, #ffb18d, #fdffab);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #ff4d94;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.heart {
+  width: 100px;
+  height: 90px;
+  background: radial-gradient(circle, #ff4d94 20%, transparent 20%) -10px -5px,
+              radial-gradient(circle, #ff4d94 20%, transparent 20%) 20px -5px,
+              radial-gradient(circle, #ff4d94 20%, transparent 20%) -5px 15px,
+              radial-gradient(circle, #ff4d94 20%, transparent 20%) 15px 15px,
+              radial-gradient(circle, #ff4d94 15%, transparent 15%) center 0;
+  background-size: 30px 15px;
+  background-color: #ff4d94;
+  transform: rotate(-45deg);
+  border-radius: 50px 50px 0 0;
+  margin: 20px auto;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+p {
+  color: #444;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.signature {
+  margin-top: 30px;
+  font-size: 20px;
+}
